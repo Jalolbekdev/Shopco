@@ -1,7 +1,8 @@
 import { Route, Routes } from "react-router"
 import { routes } from "./routes/routes"
-import Header from "./components/Header/header"
-import Footer from "./components/Footer/footer"
+
+import Footer from "./components/Footer/Footer"
+import Header from "./components/Header/Header"
 
 
 
