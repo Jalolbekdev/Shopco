@@ -170,11 +170,12 @@
         @include media(480) {
           right: -15%;
         }
-        @include media(435) {
+        
+        @include media(414) {
           right: -40%;
         }
-        @include media(370) {
-          right: -20%;
+        @include media(390) {
+          right: -30%;
         }
       }
 
@@ -202,7 +203,7 @@
         @include media(435) {
           right: -8%;
         }
-        @include media(435) {
+        @include media(414) {
           display: none;
         }
       }
