@@ -1,0 +1,106 @@
+@import url("https://fonts.cdnfonts.com/css/satoshi");
+@import url(https://db.onlinewebfonts.com/c/f1fcc5aed1e20fc0cdb9f8a7573625bd?family=Integral+CF+Regular);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: transparent;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+:root {
+  --font-family: 'Satoshi', sans-serif;
+  --second-family: "Integral CF Regular";
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-family: var(--font-family);
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0px;
+  flex-direction: unset;
+  padding: 24px 0;
+}
+.header__left {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  gap: 40px;
+  flex-direction: unset;
+  width: 45%;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-direction: unset;
+  width: 55%;
+}
+.header__logo {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 32px;
+  color: #000;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  gap: 24px;
+  flex-direction: unset;
+}
+.header__nav-item {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+}
+.header__search-boxs {
+  border-radius: 62px;
+  padding: 12px 16px;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  gap: 14px;
+  flex-direction: unset;
+  width: 90%;
+}
+.header__search {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  width: 95%;
+}
+.header__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  gap: 16px;
+  flex-direction: unset;
+}/*# sourceMappingURL=main.css.map */

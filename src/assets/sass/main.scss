@@ -1,0 +1,17 @@
+//GENERALS PAGES
+@use "./generals/variables" as *;
+@use "./generals/normalize" as *;
+@use "./generals/mixins" as *;
+
+//components pages
+@use "./scss-components/header";
+@use "./scss-components/banner";
+@use "./scss-components/newarrivals";
+@use "./scss-components/browse";
+@use "./scss-components/customers";
+@use "./scss-components/footer";
+@use "./scss-components/basket";
+@use "./scss-components/shopSidebar";
+@use "./scss-components/shop";
+@use "./scss-components/details";
+@use "./scss-components/notFound";

@@ -1,0 +1,117 @@
+@use "../generals/mixins" as *;
+.sidebar {
+  width: 25%;
+  @include media(900){
+    display: none;
+  }
+  &__wrap {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 20px 20px;
+    @include d-flex(unset, unset, 48, column);
+  }
+  &__top {
+    @include d-flex(unset, space-between, 0, unset);
+    width: 100%;
+    position: relative;
+    &-title {
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 20px;
+      color: #000;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: #0000003a;
+      bottom: -24px;
+    }
+  }
+  &__category {
+    @include d-flex(unset, unset, 10, column);
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: #0000003a;
+      bottom: -24px;
+    }
+    &-item {
+      @include d-flex(unset, space-between, 0, unset);
+      border-radius: 6px;
+      padding: 4px 8px;
+      cursor: pointer;
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.6);
+      &:hover {
+        background-color: #00000016;
+      }
+    }
+  }
+  &__price {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: #0000003a;
+      bottom: -24px;
+    }
+    &-title {
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 20px;
+      color: #000;
+    }
+    &-slider {
+      & .ant-slider-track {
+        background-color: #000;
+      }
+      & .ant-slider-handle {
+        color: #000;
+        background-color: #000;
+        &::after {
+          background-color: #000;
+        }
+      }
+    }
+  }
+  &__size {
+    &-title {
+      margin-bottom: 12px;
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 20px;
+      color: #000;
+    }
+    &-items {
+      @include d-flex(unset, unset, 12, unset);
+      flex-wrap: wrap;
+    }
+    &-item {
+      cursor: pointer;
+      border-radius: 62px;
+      padding: 10px 20px;
+      background-color: #f0f0f0;
+      &:focus {
+        background-color: #000;
+        color: white;
+      }
+    }
+  }
+  &__btn {
+    background-color: #000;
+    border-radius: 62px;
+    padding: 16px 54px;
+    color: white;
+    font-family: var(--font-family);
+    cursor: pointer;
+  }
+}

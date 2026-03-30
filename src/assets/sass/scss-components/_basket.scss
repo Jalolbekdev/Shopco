@@ -1,0 +1,403 @@
+@use "../generals/mixins" as *;
+.basket {
+  margin-top: 120px;
+  &__wrap {
+    @include d-flex(unset, unset, 24, column);
+    margin-top: 24px;
+  }
+  &-title {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: var(--second-family);
+    @include media(700) {
+      font-size: 30px;
+    }
+    @include media(550) {
+      font-size: 24px;
+    }
+  }
+  &__main {
+    @include d-flex(unset, unset, 30, unset);
+    margin-bottom: 100px;
+    @include media(1000) {
+      flex-direction: column;
+    }
+    @include media(700){
+        margin-bottom: 60px;
+    }
+  }
+  &__cards {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 14px 24px;
+    width: 60%;
+    height: min-content;
+    overflow: hidden;
+    @include d-flex(unset, unset, 40, column);
+    @include media(1000) {
+      width: 100%;
+    }
+    @include media(590) {
+      padding: 12px;
+    }
+  }
+  &__img {
+    width: 124px;
+    height: 124px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    &:hover{
+      scale: 1.1;
+      transition: all .2s ease-in-out;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    @include media(590) {
+      width: 100px;
+      height: 100px;
+    }
+    @include media(480) {
+      width: 80px;
+      height: 80px;
+      border-radius: 4px;
+    }
+  }
+  &__card {
+    @include d-flex(center, space-between, 0, unset);
+    position: relative;
+    @include media(700) {
+      align-items: unset;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: rgba(0, 0, 0, 0.088);
+      top: -20px;
+    }
+    @include media(500){
+        gap: 20px;
+    }
+    &-content {
+      @include d-flex(center, space-between, 0, unset);
+        @include media(500){
+            justify-content: unset;
+        }
+      &-main {
+        margin-left: 16px;
+        @include d-flex(unset, unset, 10, column);
+        height: 100%;
+        @include media(590) {
+          gap: 4px;
+        }
+        @include media(480) {
+          margin-left: 10px;
+          gap: 2px;
+          justify-content: space-between;
+        }
+      }
+      @include media(590) {
+        align-items: flex-start;
+      }
+      &-price {
+        @include d-flex(center, unset, 10, unset);
+      }
+      &-new-price {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 24px;
+        color: #000;
+        @include media(1000) {
+          font-size: 20px;
+        }
+        @include media(500) {
+          font-size: 16px;
+        }
+      }
+      &-old-price {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 24px;
+        text-decoration: line-through;
+        color: rgba(0, 0, 0, 0.4);
+        @include media(1000) {
+          font-size: 20px;
+        }
+        @include media(500) {
+          font-size: 16px;
+        }
+      }
+      &-discount {
+        border-radius: 62px;
+        padding: 6px 14px;
+        background: rgba(255, 51, 51, 0.1);
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 12px;
+        color: #f33;
+        @include media(500) {
+          font-size: 10px;
+          padding: 6px 14px;
+        }
+        @include media(450) {
+          padding: 6px;
+          font-size: 8px;
+        }
+      }
+    }
+    &-title {
+      font-weight: 700;
+      font-size: 20px;
+      @include media(700) {
+        font-size: 18px;
+      }
+      @include media(550) {
+        font-size: 16px;
+      }
+      @include media(400){
+        font-size: 14px;
+      }
+     
+    }
+    &-subtitle {
+      font-size: 14px;
+      span {
+        color: #00000099;
+      }
+      @include media(500) {
+        font-size: 12px;
+      }
+      
+    }
+    &-sena {
+      font-size: 24px;
+      font-weight: 600;
+      margin-top: 12px;
+      @include media(700) {
+        font-size: 20px;
+      }
+     
+    }
+    &-right {
+      @include d-flex(end, unset, 60, column);
+      @include media(700) {
+        justify-content: space-between;
+      }
+      @include media(590) {
+        justify-content: unset;
+        gap: 40px;
+      }
+      @include media(500){
+        justify-content: space-between;
+      }
+
+    }
+    &-delete-btn {
+      cursor: pointer;
+      padding: 6px 8px;
+      width: 32px;
+      &:hover {
+        background-color: #6e6d6d22;
+        border-radius: 4px;
+      }
+      @include media(500){
+        width: 24px;
+        padding: 4px;
+      }
+    }
+    &-count {
+      @include d-flex(center, center, 20, unset);
+      border-radius: 40px;
+      padding: 8px 12px;
+      background-color: #807e7e2f;
+      @include media(590) {
+        padding: 4px 8px;
+        border-radius: 20px;
+      }
+      @include media(500){
+        gap: 10px;
+      }
+      &-minus {
+        width: 16px;
+        height: 16px;
+        @include d-flex(center, center, 10, unset);
+        cursor: pointer;
+        @include media(590) {
+          width: 12px;
+          height: 12px;
+        }
+        @include media(500){
+            width: 10px;
+            height: 10px;
+        }
+      }
+      &-plus {
+        width: 16px;
+        cursor: pointer;
+        height: 16px;
+        @include d-flex(center, center, 10, unset);
+        @include media(590) {
+          width: 12px;
+          height: 12px;
+        }
+         @include media(500){
+            width: 10px;
+            height: 10px;
+        }
+      }
+      &-number{
+        font-size: 16px;
+        @include media(480){
+            font-size: 12px;
+        }
+      }
+    }
+  }
+  &__not {
+    @include d-flex(center, center, 24, column);
+    padding: 50px;
+    &-icon {
+      scale: 3;
+    }
+    &-title {
+      color: #00000099;
+    }
+    &-btn {
+      background-color: black;
+      color: white;
+      padding: 14px 26px;
+      cursor: pointer;
+      border-radius: 50px;
+    }
+  }
+  &__order {
+    @include d-flex(unset, unset, 30, column);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 16px 24px;
+    width: 40%;
+    height: 50%;
+    overflow: hidden;
+    @include media(1000) {
+      width: 100%;
+    }
+    @include media(590){
+        padding: 14px;
+    }
+    &-title {
+      font-size: 24px;
+      font-weight: 700;
+      @include media(700) {
+        font-size: 22px;
+      }
+      @include media(500) {
+        font-size: 20px;
+      }
+      @include media(400){
+        font-size: 18px;
+      }
+    }
+    &-subtitle {
+      color: #00000099;
+      font-size: 20px;
+      @include media(700) {
+        font-size: 18px;
+      }
+      @include media(500){
+        font-size: 16px;
+      }
+    }
+    &-sena {
+      font-weight: 700;
+      font-size: 20px;
+      @include media(700) {
+        font-size: 18px;
+      }
+      @include media(500){
+        font-size: 16px;
+      }
+    }
+    &-percent {
+      color: rgb(220 38 38);
+      font-weight: 700;
+      font-size: 20px;
+      @include media(700) {
+        font-size: 18px;
+      }
+      @include media(500){
+        font-size: 16px;
+      }
+    }
+    &-main {
+      @include d-flex(unset, unset, 20, column);
+    }
+    &-content {
+      @include d-flex(unset, space-between, 0, unset);
+    }
+    &-content:last-child {
+      position: relative;
+      margin-top: 20px;
+      padding: 20px 0;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        top: 0;
+        background-color: #0000002b;
+      }
+      @include media(500){
+        padding: 10px 0;
+      }
+    }
+    &-full-price {
+      font-size: 24px;
+      font-weight: 700;
+      @include media(700) {
+        font-size: 22px;
+      }
+      @include media(500) {
+        font-size: 20px;
+      }
+      @include media(400){
+        font-size: 18px;
+      }
+    }
+    &-total {
+      font-size: 24px;
+      font-weight: 600;
+      @include media(700) {
+        font-size: 22px;
+      }
+      @include media(500) {
+        font-size: 20px;
+      }
+      @include media(400){
+        font-size: 18px;
+      }
+    }
+    &-btn {
+      border-radius: 40px;
+      background-color: black;
+      padding: 20px;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      @include media(700) {
+        font-size: 18px;
+      }
+      @include media(500) {
+        font-size: 17px;
+        padding: 12px;
+      }
+      @include media(400){
+        font-size: 16px;
+      }
+    }
+  }
+}

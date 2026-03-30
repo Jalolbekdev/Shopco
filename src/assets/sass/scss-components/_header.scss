@@ -1,0 +1,175 @@
+@use "../generals/mixins" as *;
+
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 11;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+  &__wrapper {
+    @include d-flex(center, space-between, 0, unset);
+    padding: 22px 0;
+  }
+
+  &__left {
+    @include d-flex(center, unset, 40, unset);
+    width: 45%;
+
+    @include media(1170) {
+      width: 80%;
+    }
+
+    @include media(899) {
+      align-items: end;
+      gap: 16px;
+    }
+  }
+
+  &__right {
+    @include d-flex(center, space-between, 40, unset);
+    width: 55%;
+
+    @include media(1170) {
+      justify-content: end;
+      gap: 20px;
+    }
+
+    @include media(899) {
+      align-items: end;
+    }
+  }
+
+  &__logo {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 32px;
+    color: #000;
+
+    @include media(600) {
+      font-size: 25px;
+      text-align: center;
+    }
+  }
+
+  &__nav {
+    @include d-flex(center, unset, 14, unset);
+
+    @include media(899) {
+      display: none;
+    }
+
+    &-item {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 16px;
+      color: #000;
+      padding: 4px 6px;
+      &.active {
+        background-color: #0000001c;
+        padding: 4px 6px;
+        color: #000;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  &__search-boxs {
+    border-radius: 62px;
+    padding: 12px 16px;
+    background: #f0f0f0;
+    @include d-flex(center, unset, 14, unset);
+    width: 90%;
+
+    @include media(1170) {
+      background-color: transparent;
+      width: auto;
+      padding: 0;
+    }
+  }
+
+  &__search {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 95%;
+
+    @include media(1170) {
+      display: none;
+    }
+
+    &-icon {
+      @include media(1170) {
+        display: none;
+      }
+
+      &-res {
+        display: none;
+        cursor: pointer;
+        @include media(1170) {
+          display: block;
+        }
+      }
+    }
+    &-res {
+      position: absolute;
+      top: 100%;
+      background-color: #5d5b5b;
+      padding: 12px;
+      left: 30%;
+      width: 30%;
+      border-radius: 4px;
+      border: none;
+      outline: none;
+      opacity: 0;
+      visibility: hidden;
+      transform:  translateY(-10px);
+      transition: all .3s ease-in-out;
+      color: #ffffff;
+      &.active{
+        opacity: 1;
+      visibility: visible;
+      transform:  translateY(0px);
+      }
+      @include media(500){
+        width: 50%;
+        left: 25%;
+      }
+    }
+  }
+
+  &__buttons {
+    @include d-flex(center, unset, 16, unset);
+  }
+
+  &__menu-btn {
+    display: none;
+    cursor: pointer;
+    @include media(899) {
+      display: block;
+    }
+  }
+  &__menu {
+    &-main {
+      @include d-flex(unset, unset, 10, column);
+    }
+    &-item {
+      color: #000;
+      font-size: 18px;
+      font-family: var(--font-family);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.112);
+      padding: 10px 0;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        background-color: #0000001c;
+        color: #000;
+        border-radius: 10px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+.ant-drawer .ant-drawer-title {
+  font-size: 18px;
+  font-family: var(--second-family);
+  margin-left: 50%;
+}

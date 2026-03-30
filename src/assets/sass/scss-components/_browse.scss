@@ -1,0 +1,89 @@
+@use "../generals/mixins" as *;
+.browse {
+  &__wrap {
+    border-radius: 40px;
+    background: #f0f0f0;
+    @include d-flex(center, unset, 60, column);
+    padding: 70px 64px;
+    @include media(550) {
+      padding: 27px 24px;
+      border-radius: 20px;
+    }
+  }
+  &__title {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    color: #000;
+
+    @include media(750) {
+      font-size: 36px;
+    }
+    @include media(550) {
+      font-size: 32px;
+    }
+  }
+  &__content {
+    @include d-flex(unset, unset, 20, unset);
+    flex-wrap: wrap;
+    height: 600px;
+    @include media(750) {
+      height: auto;
+    }
+  }
+  &__product {
+    border-radius: 20px;
+    overflow: hidden;
+    height: 50%;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid transparent;
+    
+    &:hover {
+      border: 1px solid #c5c3c3;
+      opacity: 0.7;
+    }
+    &:nth-child(1),
+    &:nth-child(4) {
+      width: calc(40% - 20px);
+      @include media(750) {
+        width: 100%;
+        height: 250px;
+      }
+      @include media(550) {
+        height: 200px;
+      }
+    }
+    &:nth-child(2),
+    &:nth-child(3) {
+      width: 60%;
+      @include media(750) {
+        width: 100%;
+        height: 250px;
+      }
+      @include media(550) {
+        height: 200px;
+      }
+    }
+    &-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &-title {
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 36px;
+      color: #000;
+      position: absolute;
+      top: 25px;
+      left: 35px;
+      @include media(550) {
+        font-size: 24px;
+        top: 16px;
+        left: 24px;
+      }
+    }
+  }
+}

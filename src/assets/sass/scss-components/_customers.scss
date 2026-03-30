@@ -1,0 +1,67 @@
+@use "../generals/mixins" as *;
+
+.customers {
+  margin: 80px 0;
+  &__wrap {
+    @include d-flex(unset, unset, 40, column);
+  }
+  &__title {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 48px;
+    color: #000;
+    @include media(880){
+        font-size: 42px;
+    }
+    @include media(750){
+        font-size: 36px;
+    }
+    @include media(600){
+        font-size: 32px;
+      }
+  }
+  &__myswiper {
+    width: 100%;
+    @include d-flex(unset, unset,0, unset);
+    padding-left: 5px;
+    padding-right: 5px;
+    &-item {
+      @include d-flex(unset, unset, 15, column);
+      width:calc(33.3% - 20px);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      padding: 28px 32px;
+      min-height: 250px;
+      height: 100%;
+      @include media(880){
+        width:50%;
+        padding: 24px;
+        
+      }
+      @include media(750){
+        width: 100%;
+        min-height: 200px;
+      }
+    }
+    &-title {
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 110%;
+      color: #000;
+      @include media(600){
+        font-size: 16px;
+      }
+    }
+    &-subtitle {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 138%;
+      color: rgba(0, 0, 0, 0.6);
+      @include media(600){
+        font-size: 14px;
+      }
+    }
+  }
+}

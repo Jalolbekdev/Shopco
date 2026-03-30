@@ -1,0 +1,17 @@
+import * as React from "react"
+const Bannerdesignicon = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={104}
+    height={104}
+    fill="none"
+    {...props}
+  >
+    <path
+      fill="#000"
+      d="M52 0c1.765 27.955 24.045 50.235 52 52-27.955 1.765-50.235 24.045-52 52-1.765-27.955-24.045-50.235-52-52 27.955-1.765 50.235-24.045 52-52Z"
+    />
+  </svg>
+)
+export default Bannerdesignicon
+

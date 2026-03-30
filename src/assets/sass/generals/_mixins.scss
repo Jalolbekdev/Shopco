@@ -1,0 +1,13 @@
+@mixin d-flex($align, $justify, $gap, $drection){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    gap: #{$gap}px;
+    flex-direction: $drection;
+}
+
+@mixin media($size){
+    @media screen and (max-width:#{$size}px) {
+        @content
+    }
+}
