@@ -1,35 +1,34 @@
-import Deliveryicon from "./DeliveryIcon";
-import FacebookIcon from "./FacebookIcon";
-import Filtericon from "./FilterIcon";
-import GithubIcon from "./GithubIcon";
-import GooglepayIcon from "./GooglepayIcon";
-import HeadeerMenuArrowicon from "./HeaderMenuarrowIcon";
-import HeadermenubtnIcon from "./HeadermenubtnIcon";
-import HeadersearchIcon from "./HeaderSearchIcon";
-import HeaderSerachresIcon from "./HeaderSearchresIcon";
-import HeaderuserIcon from "./HeaderuserIcon";
-import InstaIcon from "./InstaIcon";
-import LanguageIcon from "./LanguageIcon";
-import LeftArrowIcon from "./LeftArrowIcon";
-import MastercardIcon from "./MastercardIcon";
-import OurarrowleftIcon from "./OurarrowLeftIcon";
-import OurarrowrightIcon from "./OurArrowrightIcon";
-import PaypalIcon from "./PaypalIcon";
-import TwitterIcon from "./TwiterIcon";
-import VizaIcon from "./VizaIcon";
-import DeletebtnIcon from "./DeleteBtnIcon";
-import MinusIcon from "./MinusIcon";
-import ApplepayIcon from "./ApplepayIcon";
-import HeadershopIcon from "./HeadershopIcon";
-import PlusIcon from "./PlusIcon";
-import VersaceIcon from "./Versaceicon";
-import ZaraIcon from "./Zaraicon";
-import PradaIcon from "./Pradaicon";
-import CelvinkIcon from "./Celvinkicon";
-import GmaileIcon from "./GmaileIcon";
+import Deliveryicon from "./DeliveryIcon.jsx";
+import FacebookIcon from "./FacebookIcon.jsx";
+import Filtericon from "./FilterIcon.jsx";
+import GithubIcon from "./GithubIcon.jsx";
+import GooglepayIcon from "./GooglepayIcon.jsx";
+import HeadeerMenuArrowicon from "./HeaderMenuarrowIcon.jsx";
+import HeadermenubtnIcon from "./HeadermenubtnIcon.jsx";
+import HeadersearchIcon from "./HeaderSearchIcon.jsx";
+import HeaderSerachresIcon from "./HeaderSearchresIcon.jsx";
+import HeaderuserIcon from "./HeaderuserIcon.jsx";
+import InstaIcon from "./InstaIcon.jsx";
+import LanguageIcon from "./LanguageIcon.jsx";
+import LeftArrowIcon from "./LeftArrowIcon.jsx";
+import MastercardIcon from "./MastercardIcon.jsx";
+import OurarrowleftIcon from "./OurarrowLeftIcon.jsx";
+import OurarrowrightIcon from "./OurArrowrightIcon.jsx";
+import PaypalIcon from "./PaypalIcon.jsx";
+import TwitterIcon from "./TwiterIcon.jsx";
+import VizaIcon from "./VizaIcon.jsx";
+import DeletebtnIcon from "./DeleteBtnIcon.jsx";
+import MinusIcon from "./MinusIcon.jsx";
+import ApplepayIcon from "./ApplepayIcon.jsx";
+import HeadershopIcon from "./HeadershopIcon.jsx";
+import PlusIcon from "./PlusIcon.jsx";
+import VersaceIcon from "./Versaceicon.jsx";
+import ZaraIcon from "./Zaraicon.jsx";
+import PradaIcon from "./Pradaicon.jsx";
+import CelvinkIcon from "./Celvinkicon.jsx";
+import GmaileIcon from "./GmaileIcon.jsx";
 export {
   GmaileIcon,
-  
   CelvinkIcon,
   PradaIcon,
   ZaraIcon,
@@ -39,8 +38,6 @@ export {
   MinusIcon,
   DeletebtnIcon,
   Deliveryicon,
- 
-  
   FacebookIcon,
   Filtericon,
   GithubIcon,

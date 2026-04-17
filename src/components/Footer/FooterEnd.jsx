@@ -1,5 +1,6 @@
 import { Link } from "react-router";
-import { FooterItems, FooterPayItems, Socials } from "../../Utils";
+import { FooterItems, FooterPayItems } from "../../Utils";
+import { socialsData } from "../../Utils/Socials";
 
 function FooterEnd() {
   return (
@@ -13,10 +14,10 @@ function FooterEnd() {
           From women to men.
         </p>
         <div className="footer__end-socials">
-          {Socials.map((item) => {
+          {socialsData.map((item) => {
             return (
               <div className="footer__end-social" key={item.id}>
-                <span>{item.icon}</span>
+                {item.icon}
               </div>
             );
           })}
@@ -36,14 +37,16 @@ function FooterEnd() {
         })}
       </div>
       <div className="footer__end__bottom">
-        <p className="footer__end-text">Shop.co © 2000-2023, All Rights Reserved</p>
+        <p className="footer__end-text">
+          Shop.co © 2000-2023, All Rights Reserved
+        </p>
         <div className="footer__end__pay-managers">
-          {FooterPayItems.map((item)=>{
-            return(
+          {FooterPayItems.map((item) => {
+            return (
               <div className="footer__end__pay-managers-item" key={item.id}>
                 <span>{item.icon}</span>
               </div>
-            )
+            );
           })}
         </div>
       </div>
