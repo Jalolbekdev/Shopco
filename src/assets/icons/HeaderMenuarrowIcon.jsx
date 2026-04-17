@@ -1,5 +1,5 @@
 import * as React from "react"
-const HeadeerMenuArrowicon = (props) => (
+const HeadeerMenuArrowIcon = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     height="24px"
@@ -11,4 +11,4 @@ const HeadeerMenuArrowicon = (props) => (
     <path d="M400-240 160-480l240-240 56 58-142 142h486v80H314l142 142-56 58Z" />
   </svg>
 )
-export default HeadeerMenuArrowicon
+export default HeadeerMenuArrowIcon

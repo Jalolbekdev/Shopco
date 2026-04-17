@@ -1,9 +1,9 @@
-import Deliveryicon from "./DeliveryIcon.jsx";
+import DeliveryIcon from "./DeliveryIcon.jsx";
 import FacebookIcon from "./FacebookIcon.jsx";
-import Filtericon from "./FilterIcon.jsx";
+import FilterIcon from "./FilterIcon.jsx";
 import GithubIcon from "./GithubIcon.jsx";
 import GooglepayIcon from "./GooglepayIcon.jsx";
-import HeadeerMenuArrowicon from "./HeaderMenuarrowIcon.jsx";
+import HeadeerMenuArrowIcon from "./HeaderMenuarrowIcon.jsx";
 import HeadermenubtnIcon from "./HeadermenubtnIcon.jsx";
 import HeadersearchIcon from "./HeaderSearchIcon.jsx";
 import HeaderSerachresIcon from "./HeaderSearchresIcon.jsx";
@@ -37,12 +37,12 @@ export {
   ApplepayIcon,
   MinusIcon,
   DeletebtnIcon,
-  Deliveryicon,
+  DeliveryIcon,
   FacebookIcon,
-  Filtericon,
+  FilterIcon,
   GithubIcon,
   GooglepayIcon,
-  HeadeerMenuArrowicon,
+  HeadeerMenuArrowIcon,
   HeadermenubtnIcon,
   HeadershopIcon,
   HeadersearchIcon,
