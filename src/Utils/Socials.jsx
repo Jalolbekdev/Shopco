@@ -1,23 +1,19 @@
-import Facebookicon from "../assets/icons/Facebookicon";
-import Githubicon from "../assets/icons/Githubicon";
-import Instaicon from "../assets/icons/Instaicon";
-import Twittericon from "../assets/icons/Twitericon";
-
+import { FacebookIcon, GithubIcon, InstaIcon, TwitterIcon } from "../assets/icons";
 export const Socials=[
     {
         id:1,
-        icon:<Twittericon/>       
+        icon:<TwitterIcon/>       
     },
     {
         id:2,
-        icon:<Facebookicon/>       
+        icon:<FacebookIcon/>       
     },
     {
         id:3,
-        icon:<Instaicon/>       
+        icon:<InstaIcon/>       
     },
     {
         id:4,
-        icon:<Githubicon/>       
+        icon:<GithubIcon/>       
     }
 ]

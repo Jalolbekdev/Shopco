@@ -1,41 +1,37 @@
 import { NavLink } from "react-router";
 import {
-  Headermenubtn,
-  Headersearchicon,
-  HeaderSerachresicon,
-  Headershopicon,
-  Headerusericon,
+  HeadermenubtnIcon,
+  HeadersearchIcon,
+  HeaderSerachresIcon,
+  HeadershopIcon,
+  HeaderuserIcon,
 } from "../../assets/icons";
-import {  Badge } from "antd";
+import { Badge } from "antd";
 import { useContext, useState } from "react";
-import { CardContext } from "../../contexts/CartContext";
 import HeaderMenu from "./HeaderMenu";
+import { CardContext } from "../../contexts/CartContext";
 
 function Header() {
- const { card } = useContext(CardContext);
-  
+  const { card } = useContext(CardContext);
   const [open, setOpen] = useState(false);
-  const [showserach,Setsearchshow]=useState(false)
- 
-  
-  
+  const [showserach, Setsearchshow] = useState(false);
   return (
     <div className="header">
       <div className="container">
-        <div className="header__wrapper">
+        <div className="header__wrapper ">
           <div className="header__left">
-            <span className="header__menu-btn" onClick={()=>setOpen(true)}>
-              <Headermenubtn />
+            <span className="header__menu-btn" onClick={() => setOpen(true)}>
+              <HeadermenubtnIcon />
             </span>
-            {open && <HeaderMenu open={open} setOpen={setOpen}/>}
+            {open && <HeaderMenu open={open} setOpen={setOpen} />}
             <NavLink to={"/"} className="header__logo">
               SHOP.CO
             </NavLink>
-            <nav className="header__nav">
+            <nav className="header__nav ">
               <NavLink to={"/shop"} className="header__nav-item">
                 Shop
               </NavLink>
-              <a href="#onsale" className="header__nav-item">
+              <a href="#onsale" className="header__nav-item ">
                 On Sale
               </a>
               <a href="#newarrivals" className="header__nav-item">
@@ -47,28 +43,39 @@ function Header() {
             </nav>
           </div>
           <div className="header__right">
-            <div className="header__search-boxs">
+            <div className="header__search-boxs ">
               <span className="header__search-icon">
-                <Headersearchicon />
+                <HeadersearchIcon />
               </span>
-              <span className="header__search-icon-res"onClick={()=>Setsearchshow(!showserach)} >
-                <HeaderSerachresicon />
+              <span
+                className="header__search-icon-res"
+                onClick={() => Setsearchshow(!showserach)}
+              >
+                <HeaderSerachresIcon />
               </span>
-              <input type="search"  placeholder="Search for products..."  className={showserach ? "header__search-res active":"header__search-res"} />
               <input
                 type="search"
-                className="header__search"
+                placeholder="Search for products..."
+                className={
+                  showserach
+                    ? "header__search-res header-res-search active "
+                    : "header__search-res header-res-search"
+                }
+              />
+              <input
+                type="search"
+                className="header__search w-[95%] outline-none border-none bg-transparent max-[1170px]:hidden "
                 placeholder="Search for products..."
               />
             </div>
-            <div className="header__buttons">
-              <NavLink to={"/basket"} className="header-button" >
+            <div className="header__buttons  ">
+              <NavLink to={"/basket"} className="header-button">
                 <Badge count={card.length}>
-                <Headershopicon />
+                  <HeadershopIcon />
                 </Badge>
               </NavLink>
               <NavLink to="/login" className="header-button">
-                <Headerusericon />
+                <HeaderuserIcon />
               </NavLink>
             </div>
           </div>

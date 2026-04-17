@@ -1,5 +1,5 @@
 import * as React from "react"
-const Instaicon = (props) => (
+const InstaIcon = (props) => (
   <svg
     width={14}
     height={14}
@@ -22,4 +22,4 @@ const Instaicon = (props) => (
     />
   </svg>
 )
-export default Instaicon
+export default InstaIcon

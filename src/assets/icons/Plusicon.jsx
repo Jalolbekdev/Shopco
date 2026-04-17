@@ -1,7 +1,6 @@
-import * as React from "react"
-const Plusicon = (props) => (
+const PlusIcon = (props) => (
   <svg
-    className="w-3 h-3 text-gray-900 dark:text-white"
+    className="w-3 h-3 text-gray-900 dark:text-black"
     aria-hidden="true"
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -17,4 +16,4 @@ const Plusicon = (props) => (
     />
   </svg>
 )
-export default Plusicon
+export default PlusIcon

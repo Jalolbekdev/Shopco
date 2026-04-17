@@ -1,5 +1,5 @@
 import * as React from "react"
-const Githubicon = (props) => (
+const GithubIcon = (props) => (
   <svg
     width={13}
     height={13}
@@ -16,4 +16,4 @@ const Githubicon = (props) => (
     />
   </svg>
 )
-export default Githubicon
+export default GithubIcon

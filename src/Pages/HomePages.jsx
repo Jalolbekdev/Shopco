@@ -1,17 +1,17 @@
-import Banner from "./Banner"
-import BrowsePages from "./BrowsePages"
-import Customers from "./Customers"
-import NewArrivalsPages from "./NewArrivalsPage/NewArrivalsPages"
+import Banner from "../components/HomePage/Banner";
+import Browse from "../components/HomePage/Browse";
+import Customers from "../components/HomePage/Customers";
+import NewArrivals from "../components/HomePage/NewArrivals";
 
-export function HomePages() {
+ function HomePages() {
   return (
     <>
       <Banner/>
-      <NewArrivalsPages/>
-      <BrowsePages/>
+      <NewArrivals/>
+      <Browse/>
       <Customers/>
     </>
   )
 }
-
+export default HomePages;
 

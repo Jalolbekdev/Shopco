@@ -1,5 +1,5 @@
 import * as React from "react"
-const Filtericon = (props) => (
+const FilterIcon = (props) => (
   <svg
     width={21}
     height={19}
@@ -15,4 +15,4 @@ const Filtericon = (props) => (
     />
   </svg>
 )
-export default Filtericon
+export default FilterIcon

@@ -1,6 +1,5 @@
 import FooterEnd from "./FooterEnd";
 import FooterTop from "./FooterTop";
-
 function Footer() {
   return (
     <footer className="footer">

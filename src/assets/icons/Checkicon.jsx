@@ -1,5 +1,5 @@
 import * as React from "react"
-const Checkicon = (props) => (
+const CheckIcon = (props) => (
   <svg
     width={24}
     height={24}
@@ -14,4 +14,4 @@ const Checkicon = (props) => (
     />
   </svg>
 )
-export default Checkicon
+export default CheckIcon

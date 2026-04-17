@@ -1,5 +1,5 @@
 import * as React from "react"
-const HeaderSerachresicon = (props) => (
+const HeaderSerachresIcon = (props) => (
   <svg
   xmlns="http://www.w3.org/2000/svg"
     width={21}
@@ -14,4 +14,4 @@ const HeaderSerachresicon = (props) => (
     />
   </svg>
 )
-export default HeaderSerachresicon
+export default HeaderSerachresIcon

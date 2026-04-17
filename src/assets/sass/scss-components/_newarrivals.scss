@@ -5,54 +5,94 @@
     @include d-flex(center, unset, 55, column);
   }
   &__cards {
-    @include d-flex(unset, space-between, 20, unset);
+    @include d-flex(unset, space-between,0, unset);
     flex-wrap: wrap;
-
-    @include media(850) {
-      justify-content: center;
-    }
+    width: 100%;
+    
     @include media(650) {
       justify-content: space-between;
     }
 
     &__item {
+      border-radius: 20px;
       width: calc(25% - 20px);
-      height: auto;
+      min-height: 500px;
       margin-bottom: 40px;
       position: relative;
+      @include d-flex(start, start, 0, column);
       animation: animationReveal both;
       animation-timeline: view(70% 20%);
       @keyframes animationReveal {
-          from{
-            opacity: 0;
-            scale: .95;
-            translate: 0 4rem;
-          }
-          to{
-            filter: none;
-            opacity: 1;
-            scale: 1;
-            translate: 0 0;
-          }
+        from {
+          opacity: 0;
+          scale: 0.95;
+          translate: 0 4rem;
+        }
+        to {
+          filter: none;
+          opacity: 1;
+          scale: 1;
+          translate: 0 0;
+        }
       }
       @include media(850) {
+       
         width: calc(33.3% - 20px);
       }
+      
       @include media(650) {
         width: calc(50% - 10px);
+      }
+      @include media(550){
+        min-height: 330px;
+      }
+      @include media(450){
+        min-height: 230px;
       }
     }
     &-img {
       width: 100%;
-      height: 80%;
+      min-height: 380px;
+      max-height: 380px;
+      height: 100%;
       border-radius: 20px;
       overflow: hidden;
-      background-color: rgb(240, 238, 237);
+      position: relative;
+      background-color: #f0eeed;
+      border: 1px solid #f0eeed;
       cursor: pointer;
+      @include media(750){
+        @include d-flex(center,center, 0,unset);
+      }
+      @include media(550){
+        min-height: 270px;
+        max-height: 270px;
+      }
+      @include media(450){
+        min-height: 200px;
+        max-height: 200px;
+      }
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        @include media(750){
+          height: 80%;
+              
+        }
+        @include media(650){
+          height: 100%;
+        }
+        @include media(550){
+           width: 90%;
+        height: 90%;
+        object-fit: cover;
+        }
+        @include media(450){
+           width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
       }
     }
     &-title {
@@ -99,21 +139,21 @@
       font-weight: 700;
       font-size: 24px;
       text-decoration: line-through;
-      color: rgba(0, 0, 0, 0.4);
-      @include media(1000) {
-        font-size: 20px;
-      }
-      @include media(500) {
-        font-size: 18px;
-      }
-      @include media(400){
-        font-size: 16px;
-      }
+      color: #00000066;
+        @include media(1000) {
+          font-size: 20px;
+        }
+        @include media(500) {
+          font-size: 18px;
+        }
+        @include media(400){
+          font-size: 16px;
+        }
     }
     &-discount {
       border-radius: 62px;
       padding: 6px 14px;
-      background: rgba(255, 51, 51, 0.1);
+      background: #ff33331a;
       font-family: var(--font-family);
       font-weight: 500;
       font-size: 12px;
@@ -127,7 +167,7 @@
         font-size: 8px;
       }
     }
-    &-rangs{
+    &-rangs {
       width: 100%;
       small{
         li{
@@ -141,21 +181,26 @@
     &-basket {
       position: absolute;
       cursor: pointer;
-      bottom: 25%;
+      top: 67%;
       right: 25px;
       scale: 1.4;
-      &:hover{
+      &:hover {
         transition: all .3s ease-in-out;
         scale: 2;
-        @include media(500){
+        @include media(500) {
           scale: 1.4;
         }
       }
-      @include media(500){
+      @include media(550) {
         right: 15px;
+        top: 63%;
         scale: 1.2;
       }
-     
+      @include media(450) {
+        right: 15px;
+        top: 55%;
+        scale: 1.2;
+      }
     }
   }
   &-title {
@@ -172,7 +217,7 @@
     }
   }
   &__button {
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid #0000001a;
     border-radius: 62px;
     padding: 16px 54px;
     font-family: var(--font-family);

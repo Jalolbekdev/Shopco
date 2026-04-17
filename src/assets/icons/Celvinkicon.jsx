@@ -1,11 +1,12 @@
 import * as React from "react"
-const Celvinicxon = (props) => (
+const CelvinkIcon = (props) => (
   <svg
     width={207}
     height={34}
     viewBox="0 0 207 34"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    className="max-[1000px]:w-[70%] max-[560px]:w-[80px]"
     {...props}
   >
     <path
@@ -16,4 +17,4 @@ const Celvinicxon = (props) => (
     />
   </svg>
 )
-export default Celvinicxon
+export default CelvinkIcon

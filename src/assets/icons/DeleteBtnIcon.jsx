@@ -1,5 +1,5 @@
 import * as React from "react"
-const Deletebtnicon = (props) => (
+const DeletebtnIcon = (props) => (
   <svg
     viewBox="0 0 15 17.5"
     height={17.5}
@@ -17,4 +17,4 @@ const Deletebtnicon = (props) => (
     />
   </svg>
 )
-export default Deletebtnicon
+export default DeletebtnIcon

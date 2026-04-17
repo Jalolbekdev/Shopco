@@ -1,34 +1,64 @@
-import Applepayicon from "./Applepayicon";
-import Bannerdesignicon from "./Bannerdesignicon";
-import Bannerdesignsmallicon from "./Bannerdesignsmallicon";
-import Checkicon from "./Checkicon";
-import Checkingicon from "./Checkingicon";
+import CheckIcon from "./CheckIcon";
+import Checkingicon from "./CheckingIcon";
 import Deliveryicon from "./DeliveryIcon";
-import Emailicon from "./Emailicon";
-import Facebookicon from "./Facebookicon";
-import Filtericon from "./Filtericon";
-import Githubicon from "./Githubicon";
-import Googlepayicon from "./Googlepayicon";
+import EmailIcon from "./EmailIcon";
+import FacebookIcon from "./FacebookIcon";
+import Filtericon from "./FilterIcon";
+import GithubIcon from "./GithubIcon";
+import GooglepayIcon from "./GooglepayIcon";
 import HeadeerMenuArrowicon from "./HeaderMenuarrowIcon";
-import Headermenubtn from "./Headermenubtn";
-import Headernavicon from "./HeaderNavicon";
-import Headersearchicon from "./HeaderSearchicon";
-import HeaderSerachresicon from "./HeaderSearchresicon";
-import Headershopicon from "./Headershopicon";
-import Headerusericon from "./Headerusericon";
-import Hearticon from "./Hearticon";
-import Instaicon from "./Instaicon";
+import HeadermenubtnIcon from "./HeadermenubtnIcon";
+import HeadersearchIcon from "./HeaderSearchIcon";
+import HeaderSerachresIcon from "./HeaderSearchresIcon";
+import HeaderuserIcon from "./HeaderuserIcon";
+import InstaIcon from "./InstaIcon";
 import LanguageIcon from "./LanguageIcon";
 import LeftArrowIcon from "./LeftArrowIcon";
-import Mastercardicon from "./Mastercardicon";
-import Onlinechaticon from "./Onlineconsultationicon";
-import Ourarrowlefticon from "./OurarrowLefticon";
-import Ourarrowrighticon from "./OurArrowrighticon";
-import Paypalicon from "./Paypalicon";
-import Stars05icon from "./Stars05icon";
-import Starsicon from "./Starsicon";
-import Twittericon from "./Twitericon";
-import Vizaicon from "./Vizaicon";
-import Deletebtnicon from "./DeleteBtnIcon";
-import Minusicon from "./Minusicon";
-export { Applepayicon,Minusicon ,Deletebtnicon, Bannerdesignicon, Bannerdesignsmallicon, Checkicon, Checkingicon, Deliveryicon, Emailicon, Facebookicon, Filtericon, Githubicon, Googlepayicon, HeadeerMenuArrowicon, Headermenubtn, Headernavicon, Headersearchicon, HeaderSerachresicon, Headershopicon, Headerusericon, Hearticon, Instaicon, LanguageIcon, LeftArrowIcon, Mastercardicon, Onlinechaticon, Ourarrowlefticon, Ourarrowrighticon, Paypalicon, Stars05icon, Starsicon, Twittericon, Vizaicon }
+import MastercardIcon from "./MastercardIcon";
+import OurarrowleftIcon from "./OurarrowLeftIcon";
+import OurarrowrightIcon from "./OurArrowrightIcon";
+import PaypalIcon from "./PaypalIcon";
+import TwitterIcon from "./TwiterIcon";
+import VizaIcon from "./VizaIcon";
+import DeletebtnIcon from "./DeleteBtnIcon";
+import MinusIcon from "./MinusIcon";
+import ApplepayIcon from "./ApplepayIcon";
+import HeadershopIcon from "./HeadershopIcon";
+import PlusIcon from "./PlusIcon";
+import VersaceIcon from "./Versaceicon";
+import ZaraIcon from "./Zaraicon";
+import PradaIcon from "./Pradaicon";
+import CelvinkIcon from "./Celvinkicon";
+export {
+  CelvinkIcon,
+  PradaIcon,
+  ZaraIcon,
+  VersaceIcon,
+  PlusIcon,
+  ApplepayIcon,
+  MinusIcon,
+  DeletebtnIcon,
+  CheckIcon,
+  Checkingicon,
+  Deliveryicon,
+  EmailIcon,
+  FacebookIcon,
+  Filtericon,
+  GithubIcon,
+  GooglepayIcon,
+  HeadeerMenuArrowicon,
+  HeadermenubtnIcon,
+  HeadershopIcon,
+  HeadersearchIcon,
+  HeaderSerachresIcon,
+  HeaderuserIcon,
+  InstaIcon,
+  LanguageIcon,
+  LeftArrowIcon,
+  MastercardIcon,
+  OurarrowleftIcon,
+  OurarrowrightIcon,
+  PaypalIcon,
+  TwitterIcon,
+  VizaIcon,
+};

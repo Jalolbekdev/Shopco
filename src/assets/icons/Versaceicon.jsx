@@ -1,5 +1,5 @@
 import * as React from "react"
-const Versaceicon = (props) => (
+const VersaceIcon = (props) => (
   <svg
     width={167}
     height={34}
@@ -7,6 +7,7 @@ const Versaceicon = (props) => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
+    className="max-[1000px]:w-[70%] max-[560px]:w-[80px]"
   >
     <path
       fillRule="evenodd"
@@ -16,5 +17,5 @@ const Versaceicon = (props) => (
     />
   </svg>
 )
-export default Versaceicon
+export default VersaceIcon
 

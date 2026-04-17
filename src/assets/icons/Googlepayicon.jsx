@@ -1,5 +1,5 @@
 import * as React from "react"
-const Googlepayicon = (props) => (
+const GooglepayIcon = (props) => (
   <svg
     width={29}
     height={12}
@@ -38,4 +38,4 @@ const Googlepayicon = (props) => (
     />
   </svg>
 )
-export default Googlepayicon
+export default GooglepayIcon

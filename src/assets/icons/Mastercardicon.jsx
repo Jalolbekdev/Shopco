@@ -1,5 +1,5 @@
 import * as React from "react"
-const Mastercardicon = (props) => (
+const MastercardIcon = (props) => (
   <svg
     width={26}
     height={16}
@@ -23,4 +23,4 @@ const Mastercardicon = (props) => (
     />
   </svg>
 )
-export default Mastercardicon
+export default MastercardIcon

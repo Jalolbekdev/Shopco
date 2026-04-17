@@ -1,5 +1,5 @@
 import * as React from "react"
-const Headerusericon = (props) => (
+const HeaderuserIcon = (props) => (
   <svg
   xmlns="http://www.w3.org/2000/svg"
     width={24}
@@ -14,5 +14,5 @@ const Headerusericon = (props) => (
     />
   </svg>
 )
-export default Headerusericon
+export default HeaderuserIcon
 

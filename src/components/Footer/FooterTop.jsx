@@ -1,6 +1,4 @@
-import React from "react";
-import Emailicon from "../../assets/icons/Emailicon";
-
+import { EmailIcon } from "../../assets/icons";
 function FooterTop() {
   return (
     <>
@@ -8,10 +6,9 @@ function FooterTop() {
         <p className="footer__top-title">
           STAY UPTO DATE ABOUT OUR LATEST OFFERS
         </p>
-
         <form className="footer__top__form">
           <div className="footer__top-email">
-            <Emailicon />
+            <EmailIcon />
             <input type="email" placeholder="Enter your email address" />
           </div>
           <button type="submit" className="footer__top-btn">

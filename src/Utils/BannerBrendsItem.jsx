@@ -1,7 +1,33 @@
-import Celvinicxon from "../assets/icons/Celvinkicon";
-import Gucciicon from "../assets/icons/Gucciicon";
-import Pradaicon from "../assets/icons/Pradaicon";
-import Versaceicon from "../assets/icons/Versaceicon";
-import Zaraicon from "../assets/icons/Zaraicon";
+import {
+  VersaceIcon,
+  ZaraIcon,
+  PradaIcon,
+  // GucciIcon,
+  CelvinkIcon,
+} from "../assets/icons";
+import GucciIcon from "../assets/icons/Gucciicon";
 
-export const BannerBrendsItem=[ <Versaceicon/>,<Zaraicon/>,<Gucciicon/>,<Pradaicon/>,<Celvinicxon/>]
+export const BannerBrendsItem = [
+  {
+    id: 1,
+    icon: <VersaceIcon />,
+  },
+  {
+    id: 2,
+
+    icon: <ZaraIcon />,
+  },
+  {
+    id: 3,
+
+    icon: <GucciIcon />,
+  },
+  {
+    id: 4,
+    icon: <PradaIcon />,
+  },
+  {
+    id: 5,
+    icon: <CelvinkIcon />,
+  },
+];

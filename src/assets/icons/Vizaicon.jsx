@@ -1,5 +1,5 @@
 import * as React from "react"
-const Vizaicon = (props) => (
+const VizaIcon = (props) => (
   <svg
     width={33}
     height={11}
@@ -14,4 +14,4 @@ const Vizaicon = (props) => (
     />
   </svg>
 )
-export default Vizaicon
+export default VizaIcon

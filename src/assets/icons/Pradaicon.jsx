@@ -1,11 +1,12 @@
 import * as React from "react"
-const Pradaicon = (props) => (
+const PradaIcon = (props) => (
   <svg
     width={194}
     height={32}
     viewBox="0 0 194 32"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    className="max-[1000px]:w-[70%] max-[560px]:w-[80px]"
     {...props}
   >
     <g clipPath="url(#clip0_22_367)">
@@ -26,4 +27,4 @@ const Pradaicon = (props) => (
     </defs>
   </svg>
 )
-export default Pradaicon
+export default PradaIcon

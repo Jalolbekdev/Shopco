@@ -1,5 +1,5 @@
 import * as React from "react"
-const Facebookicon = (props) => (
+const FacebookIcon = (props) => (
   <svg
     width={7}
     height={13}
@@ -14,4 +14,4 @@ const Facebookicon = (props) => (
     />
   </svg>
 )
-export default Facebookicon
+export default FacebookIcon

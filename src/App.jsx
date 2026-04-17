@@ -1,16 +1,18 @@
 import { Route, Routes } from "react-router"
 import { routes } from "./routes/routes"
-
-import Footer from "./components/Footer/Footer"
 import Header from "./components/Header/Header"
+import Footer from "./components/Footer/Footer"
+
+
 
 
 
 function App() {
-
+ 
 
   return (
     <>
+   
       <Header />
       <Routes>
         {

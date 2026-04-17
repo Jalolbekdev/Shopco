@@ -1,11 +1,12 @@
 import * as React from "react"
-const Zaraicon = (props) => (
+const ZaraIcon = (props) => (
   <svg
     width={91}
     height={38}
     viewBox="0 0 91 38"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    className="max-[1000px]:w-[70%] max-[560px]:w-[80px]"
     {...props}
   >
     <g clipPath="url(#clip0_22_363)">
@@ -21,4 +22,4 @@ const Zaraicon = (props) => (
     </defs>
   </svg>
 )
-export default Zaraicon
+export default ZaraIcon

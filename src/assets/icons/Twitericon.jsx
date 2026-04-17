@@ -1,5 +1,5 @@
 import * as React from "react"
-const Twittericon = (props) => (
+const TwitterIcon = (props) => (
   <svg
     width={12}
     height={10}
@@ -14,4 +14,4 @@ const Twittericon = (props) => (
     />
   </svg>
 )
-export default Twittericon
+export default TwitterIcon

@@ -1,5 +1,5 @@
 import * as React from "react"
-const Paypalicon = (props) => (
+const PaypalIcon = (props) => (
   <svg
     width={35}
     height={10}
@@ -22,4 +22,4 @@ const Paypalicon = (props) => (
     />
   </svg>
 )
-export default Paypalicon
+export default PaypalIcon

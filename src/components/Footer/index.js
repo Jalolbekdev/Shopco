@@ -1,4 +1,9 @@
-import footer from "./Footer";
+import Footer from "./Footer";
 import FooterEnd from "./FooterEnd";
 import FooterTop from "./FooterTop";
-export {footer,FooterEnd,FooterTop};
+export {
+    FooterEnd,
+    FooterTop,
+    Footer
+
+}

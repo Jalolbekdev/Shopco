@@ -1,5 +1,5 @@
 import * as React from "react"
-const Ourarrowlefticon = (props) => (
+const OurarrowleftIcon = (props) => (
   <svg
     width={24}
     height={24}
@@ -14,4 +14,4 @@ const Ourarrowlefticon = (props) => (
     />
   </svg>
 )
-export default Ourarrowlefticon
+export default OurarrowleftIcon

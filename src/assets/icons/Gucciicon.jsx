@@ -1,11 +1,12 @@
 import * as React from "react"
-const Gucciicon = (props) => (
+const GucciIcon = (props) => (
   <svg
     width={156}
     height={36}
     viewBox="0 0 156 36"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    className="max-[1000px]:w-[70%] max-[560px]:w-[80px]"
     {...props}
   >
     <g clipPath="url(#clip0_22_365)">
@@ -21,4 +22,4 @@ const Gucciicon = (props) => (
     </defs>
   </svg>
 )
-export default Gucciicon
+export default GucciIcon

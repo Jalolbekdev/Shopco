@@ -1,5 +1,5 @@
 import * as React from "react"
-const Applepayicon = (props) => (
+const ApplepayIcon = (props) => (
   <svg
     width={27}
     height={12}
@@ -30,4 +30,4 @@ const Applepayicon = (props) => (
     />
   </svg>
 )
-export default Applepayicon
+export default ApplepayIcon
