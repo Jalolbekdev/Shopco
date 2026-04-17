@@ -1,5 +1,4 @@
 import Deliveryicon from "./DeliveryIcon";
-import EmailIcon from "./EmailIcon";
 import FacebookIcon from "./FacebookIcon";
 import Filtericon from "./FilterIcon";
 import GithubIcon from "./GithubIcon";
@@ -27,7 +26,10 @@ import VersaceIcon from "./Versaceicon";
 import ZaraIcon from "./Zaraicon";
 import PradaIcon from "./Pradaicon";
 import CelvinkIcon from "./Celvinkicon";
+import GmaileIcon from "./GmaileIcon";
 export {
+  GmaileIcon,
+  
   CelvinkIcon,
   PradaIcon,
   ZaraIcon,
@@ -37,7 +39,8 @@ export {
   MinusIcon,
   DeletebtnIcon,
   Deliveryicon,
-  EmailIcon,
+ 
+  
   FacebookIcon,
   Filtericon,
   GithubIcon,

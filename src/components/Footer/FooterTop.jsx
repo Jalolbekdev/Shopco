@@ -1,4 +1,5 @@
-import { EmailIcon } from "../../assets/icons";
+import GmaileIcon from "../../assets/icons/GmaileIcon";
+
 function FooterTop() {
   return (
     <>
@@ -8,7 +9,7 @@ function FooterTop() {
         </p>
         <form className="footer__top__form">
           <div className="footer__top-email">
-            <EmailIcon />
+            <GmaileIcon/>
             <input type="email" placeholder="Enter your email address" />
           </div>
           <button type="submit" className="footer__top-btn">
