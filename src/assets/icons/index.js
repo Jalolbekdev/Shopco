@@ -1,4 +1,3 @@
-import Checkingicon from "./CheckingIcon";
 import Deliveryicon from "./DeliveryIcon";
 import EmailIcon from "./EmailIcon";
 import FacebookIcon from "./FacebookIcon";
@@ -37,7 +36,6 @@ export {
   ApplepayIcon,
   MinusIcon,
   DeletebtnIcon,
-  Checkingicon,
   Deliveryicon,
   EmailIcon,
   FacebookIcon,
