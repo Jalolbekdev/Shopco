@@ -1,10 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router";
-
 import { CardContext } from "../contexts/CartContext";
-import DeletebtnIcon from "../assets/icons/DeleteBtnIcon";
-import MinusIcon from "../assets/icons/Minusicon";
-import PlusIcon from "../assets/icons/Plusicon";
+import {DeletebtnIcon, MinusIcon,PlusIcon}from "../assets/icons";
 function BasketProducts() {
   const { card, incrementCard, decrementCard, deleteCard, addDetails } =
     useContext(CardContext);

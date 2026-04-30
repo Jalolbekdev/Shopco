@@ -27,11 +27,11 @@ function Header() {
             <NavLink to={"/"} className="header__logo">
               SHOP.CO
             </NavLink>
-            <nav className="header__nav ">
+            <nav className="header__nav">
               <NavLink to={"/shop"} className="header__nav-item">
                 Shop
               </NavLink>
-              <a href="#onsale" className="header__nav-item ">
+              <a href="#onsale" className="header__nav-item">
                 On Sale
               </a>
               <a href="#newarrivals" className="header__nav-item">

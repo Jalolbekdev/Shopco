@@ -1,4 +1,4 @@
-import { DetailsBottomContents } from "../../Utils/DetailsBottomContent";
+import { DetailsBottomContents } from "../../Utils/data";
 
 function DetailsTabs1() {
   return (

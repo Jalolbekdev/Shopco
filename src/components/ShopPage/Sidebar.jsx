@@ -1,6 +1,9 @@
 import { Slider } from "antd";
 import FilterIcon from "../../assets/icons/FilterIcon";
-import { ShopSidebarCategoryItems ,ShopSidebarSizeItem} from "../../Utils";
+import {
+  ShopSidebarCategoryItems,
+  ShopSidebarSizeItem,
+} from "../../Utils/data";
 
 function Sidebar() {
   return (

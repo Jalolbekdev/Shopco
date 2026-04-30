@@ -1,5 +1,5 @@
 import { Collapse } from "antd";
-import { DetailsFaq } from "../../Utils/DetailsFaq";
+import { DetailsFaq } from "../../Utils/data";
 function DetailsTabs3() {
   return (
     <div className="details__bottom-item">

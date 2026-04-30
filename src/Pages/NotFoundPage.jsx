@@ -7,7 +7,7 @@ function NotFoundPage() {
         <p>
          404
           </p>
-        <p >Not Foun<span>d</span></p>
+        <p>Not Foun<span>d</span></p>
       </div>
       <Link to={"/"} className="not__found-btn">Home</Link>
     </div>

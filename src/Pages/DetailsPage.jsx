@@ -2,8 +2,8 @@ import { Breadcrumb, Tabs } from "antd";
 import { Link } from "react-router";
 import { useContext, useEffect } from "react";
 import { CardContext } from "../contexts/CartContext";
-import { DetailsItems } from "../Utils/DetailsItems";
 import DetailsContent from "../components/DetailsPage/DetailsContent";
+import { DetailsItems } from "../Utils/data";
 
 function DetailsPage() {
   const { detail } = useContext(CardContext);

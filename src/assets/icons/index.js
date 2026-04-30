@@ -22,12 +22,14 @@ import MinusIcon from "./MinusIcon.jsx";
 import ApplepayIcon from "./ApplepayIcon.jsx";
 import HeadershopIcon from "./HeadershopIcon.jsx";
 import PlusIcon from "./PlusIcon.jsx";
-import VersaceIcon from "./Versaceicon.jsx";
-import ZaraIcon from "./Zaraicon.jsx";
-import PradaIcon from "./Pradaicon.jsx";
-import CelvinkIcon from "./Celvinkicon.jsx";
+import VersaceIcon from "./VersaceIcon.jsx";
+import ZaraIcon from "./ZaraIcon.jsx";
+import PradaIcon from "./PradaIcon.jsx";
+import CelvinkIcon from "./CelvinkIcon.jsx";
 import GmaileIcon from "./GmaileIcon.jsx";
+import Guccicon from "./Guccicon.jsx";
 export {
+  Guccicon,
   GmaileIcon,
   CelvinkIcon,
   PradaIcon,

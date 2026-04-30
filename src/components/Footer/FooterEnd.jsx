@@ -1,6 +1,7 @@
 import { Link } from "react-router";
-import { FooterItems, FooterPayItems } from "../../Utils";
+// import { FooterItems, FooterPayItems } from "../../Utils";
 import { socialsData } from "../../Utils/Socials";
+import { FooterItems, FooterPayItems } from "../../Utils/data";
 
 function FooterEnd() {
   return (

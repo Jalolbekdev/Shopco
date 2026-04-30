@@ -1,5 +1,5 @@
 import * as React from "react"
-const GucciIcon = (props) => (
+const Guccicon = (props) => (
   <svg
     width={156}
     height={36}
@@ -22,4 +22,4 @@ const GucciIcon = (props) => (
     </defs>
   </svg>
 )
-export default GucciIcon
+export default Guccicon

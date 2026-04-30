@@ -2,10 +2,10 @@ import { message, Rate } from "antd";
 import { useContext, useEffect, useState } from "react";
 import { ShoppingCartOutlined } from "@ant-design/icons";
 import { Link } from "react-router";
-import { Loader } from "./LoadingImage";
-import { CardContext } from "../../contexts/CartContext";
+import { Loader } from "./HomePage/LoadingImage";
+import { CardContext } from "../contexts/CartContext";
 
-function NewarrivalsCards({ show }) {
+export function NewArrivalsCards({ show }) {
   const [data, Setdata] = useState([]);
   const [loader, Setloader] = useState(false);
   const [messageApi, contextHolder] = message.useMessage();
@@ -144,4 +144,4 @@ function NewarrivalsCards({ show }) {
   );
 }
 
-export default NewarrivalsCards;
+

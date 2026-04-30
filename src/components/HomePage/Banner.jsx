@@ -1,5 +1,6 @@
 import { Link } from "react-router";
-import { BannerBrendsItem, BannerProductItem } from "../../Utils";
+import { BannerBrendsItem, BannerProductItem } from "../../Utils/data";
+
 
 function Banner() {
   return (
