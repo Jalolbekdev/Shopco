@@ -169,64 +169,6 @@
     &-item {
       position: relative;
 
-      &:nth-child(1)::after {
-        position: absolute;
-        content: "";
-        width: 2px;
-        height: 100%;
-        background-color: #00000030;
-        top: 0;
-        right: -35px;
-
-        @include media(1050) {
-          right: -20px;
-        }
-        @include media(950) {
-          right: -50%;
-        }
-        @include media(650) {
-          right: -25%;
-        }
-        @include media(480) {
-          right: -15%;
-        }
-        
-        @include media(414) {
-          right: -40%;
-        }
-        @include media(390) {
-          right: -30%;
-        }
-      }
-
-      &:nth-child(2)::after {
-        position: absolute;
-        content: "";
-        width: 2px;
-        height: 100%;
-        background-color: #00000030;
-        top: 0;
-        right: -35px;
-
-        @include media(1050) {
-          right: -20px;
-        }
-        @include media(950) {
-          right: -50%;
-        }
-        @include media(650) {
-          right: -25%;
-        }
-        @include media(480) {
-          right: -15%;
-        }
-        @include media(435) {
-          right: -8%;
-        }
-        @include media(414) {
-          display: none;
-        }
-      }
     }
 
     &-num {

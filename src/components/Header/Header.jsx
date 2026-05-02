@@ -7,18 +7,18 @@ import {
   HeaderuserIcon,
 } from "../../assets/icons";
 import { Badge } from "antd";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import HeaderMenu from "./HeaderMenu";
 import { CardContext } from "../../contexts/CartContext";
 
 function Header() {
   const { card } = useContext(CardContext);
   const [open, setOpen] = useState(false);
-  const [showserach, Setsearchshow] = useState(false);
+  const [showserach, Setsearchshow] = useState(false);  
   return (
     <div className="header">
       <div className="container">
-        <div className="header__wrapper ">
+        <div className="header__wrapper">
           <div className="header__left">
             <span className="header__menu-btn" onClick={() => setOpen(true)}>
               <HeadermenubtnIcon />
@@ -43,32 +43,7 @@ function Header() {
             </nav>
           </div>
           <div className="header__right">
-            <div className="header__search-boxs ">
-              <span className="header__search-icon">
-                <HeadersearchIcon />
-              </span>
-              <span
-                className="header__search-icon-res"
-                onClick={() => Setsearchshow(!showserach)}
-              >
-                <HeaderSerachresIcon />
-              </span>
-              <input
-                type="search"
-                placeholder="Search for products..."
-                className={
-                  showserach
-                    ? "header__search-res header-res-search active "
-                    : "header__search-res header-res-search"
-                }
-              />
-              <input
-                type="search"
-                className="header__search w-[95%] outline-none border-none bg-transparent max-[1170px]:hidden "
-                placeholder="Search for products..."
-              />
-            </div>
-            <div className="header__buttons  ">
+            <div className="header__buttons">
               <NavLink to={"/basket"} className="header-button">
                 <Badge count={card.length}>
                   <HeadershopIcon />

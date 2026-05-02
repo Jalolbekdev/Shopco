@@ -9,10 +9,11 @@
   &__wrapper {
     @include d-flex(center, space-between, 0, unset);
     padding: 22px 0;
+    
   }
 
   &__left {
-    @include d-flex(center, unset, 40, unset);
+    @include d-flex(unset, unset, 40, unset);
     width: 45%;
 
     @include media(1170) {
@@ -21,11 +22,12 @@
 
     @include media(899) {
       gap: 16px;
+      
     }
   }
 
   &__right {
-    @include d-flex(center, space-between, 40, unset);
+    @include d-flex(end, end, 40, unset);
     width: 55%;
 
     @include media(1170) {
@@ -39,6 +41,7 @@
     font-weight: 700;
     font-size: 32px;
     color: #000;
+    line-height: 1;
 
     @include media(600) {
       font-size: 25px;
@@ -62,17 +65,16 @@
       position: relative;
       animation-name: navitem;
       animation-duration: 1s;
-   
+
       @keyframes navitem {
-        0%{
+        0% {
           top: -110px;
         }
-        100%{
+        100% {
           top: 0;
         }
-        
       }
-      &:hover{
+      &:hover {
         background-color: #0000001c;
         padding: 4px 6px;
         color: #000;
@@ -87,70 +89,6 @@
     }
   }
 
-  &__search-boxs {
-    border-radius: 62px;
-    padding: 12px 16px;
-    background: #f0f0f0;
-    @include d-flex(center, unset, 14, unset);
-    width: 90%;
-
-    @include media(1170) {
-      background-color: transparent;
-      width: auto;
-      padding: 0;
-    }
-  }
-
-  &__search {
-    outline: none;
-    border: none;
-    background-color: transparent;
-    width: 95%;
-
-    @include media(1170) {
-      display: none;
-    }
-
-    &-icon {
-      @include media(1170) {
-        display: none;
-      }
-
-      &-res {
-        display: none;
-        cursor: pointer;
-        @include media(1170) {
-          display: block;
-        }
-      }
-    }
-    &-res {
-      position: absolute;
-      top: 100%;
-      background-color: #5d5b5b;
-      padding: 12px;
-      left: 30%;
-      width: 30%;
-      border-radius: 4px;
-      border: none;
-      outline: none;
-      opacity: 0;
-      visibility: hidden;
-      transform:  translateY(-10px);
-      transition: all .3s ease-in-out;
-      color: #ffffff;
-      &.active{
-        opacity: 1;
-      visibility: visible;
-      transform:  translateY(0px);
-      }
-      @include media(500){
-        width: 50%;
-        left: 25%;
-      }
-    }
-  }
-
   &__buttons {
     @include d-flex(start, center, 16, unset);
   }
@@ -160,6 +98,10 @@
     cursor: pointer;
     @include media(899) {
       display: block;
+      margin-top: 6.5px;
+    }
+    @include media(600){
+      margin-top: 3px;
     }
   }
   &__menu {

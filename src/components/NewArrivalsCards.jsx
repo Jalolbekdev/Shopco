@@ -60,8 +60,8 @@ export function NewArrivalsCards({ show }) {
               <div className="newarrivals__cards__main">
                 <p className="newarrivals__cards-title">
                   {item.title.length > 20
-                    ? `${item.title.slice(0, 21)}...`
-                    : item.title}
+                    ? `${(item.title).toUpperCase().slice(0, 21)}...`
+                    : item.title.toUpperCase()}
                 </p>
                 <div className="newarrivals__cards-rangs">
                   <small>
@@ -106,8 +106,8 @@ export function NewArrivalsCards({ show }) {
               <div className="newarrivals__cards__main">
                 <p className="newarrivals__cards-title">
                   {item.title.length > 20
-                    ? `${item.title.slice(0, 21)}...`
-                    : item.title}
+                    ? `${(item.title).toUpperCase().slice(0, 21)}...`
+                    : (item.title).toUpperCase()}
                 </p>
                 <div className="newarrivals__cards-rangs  ">
                   <small>
